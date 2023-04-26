@@ -39,9 +39,13 @@
 			   var u = $('#unit').val();
 
 			   if(!validate(t,u)) return;
+
+			   Caculation(t,u);
+			});
+		});
 			
 		function validate(t,u){
-			   if(isNaN(t)){
+			if(isNaN(t)){
 					msg = "Please verify whether the temperature value is correct!!!";
 					alert(msg);
 					return;
@@ -53,7 +57,7 @@
 			   }
 			   return true
 		}
-			   
+		function Caculation(t,u){
 			   var t1;
 			   var u1;
 			   
@@ -69,8 +73,8 @@
 			   }
 			   
 			   alert("Temperature is "+t1+" in "+u1);
-			});
-		});
+			}
+
 	</script>
 </body>
 </html>
